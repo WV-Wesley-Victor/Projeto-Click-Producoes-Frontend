@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link href="CSS/login.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <div class="centro">
+            <div class="left-side">
+                <button type="button" id="btnVoltar" class="btn-voltar" onclick="voltar(); return false;"></button>
+            </div>
+            <section class="right-side">
+                <div>
+                    <div class="welcome-lines">
+                        <div>
+                            <h1 class="titulo-login">Login</h1>
+                        </div>
+                        <div class="welcome-line-2">
+                            <p>Por favor, informe seu e-mail e senha.</p>
+                        </div>
+                    </div>
+                    <div class="input-area">
+                        <div class="form-inp">
+                            <input type="text" id="txtEmail" class="txtEmail" placeholder="Digite seu e-mail">
+                        </div>
+                        <div class="form-inp">
+                            <input type="password" id="txtPassword" class="txtPassword" placeholder="Digite sua senha">
+                        </div>
+                    </div>
+                    <div class="div-btn">
+                        <button type="submit" id="Button1" class="buttonLogin" onclick="Button1_Click()">Entrar</button>
+                    </div>
+                    <div>
+                        <span id="LblResposta" class="LblResposta"></span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </header>
+    <script src="Javascript/login.js"></script>
+</body>
+</html>
