@@ -16,11 +16,11 @@ function preCarregarImagens() {
 preCarregarImagens();
 
 function trocarImagemDeFundo() {
-    document.getElementById("img-topo").style.background =
-        imagensDeFundoComDegradê[indexAtual];
-    document.getElementById("img-topo").style.backgroundSize = "cover";
-    document.getElementById("img-topo").style.backgroundPosition = "center";
-    document.getElementById("img-topo").style.backgroundRepeat = "no-repeat";
+    let imgElement = document.getElementById("img-topo");
+    imgElement.style.background = imagensDeFundoComDegradê[indexAtual];
+    imgElement.style.backgroundSize = "cover";
+    imgElement.style.backgroundPosition = "50% 50%";
+    imgElement.style.backgroundRepeat = "no-repeat";
     indexAtual = (indexAtual + 1) % imagensDeFundoComDegradê.length;
 }
 
