@@ -1,7 +1,7 @@
 ﻿let imagensDeFundoComDegradê = [
-    "linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(../img/Foto-casal4.jpg)",
-    "linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(../img/Foto-casal3.jpg)",
-    "linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(../img/Foto-casal6.jpg)",
+    "linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(img/Foto-casal4.jpg)",
+    "linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(img/Foto-casal3.jpg)",
+    "linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(img/Foto-casal6.jpg)",
 ];
 
 let indexAtual = 0;

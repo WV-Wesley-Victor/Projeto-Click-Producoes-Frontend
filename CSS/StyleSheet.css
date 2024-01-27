@@ -29,7 +29,7 @@ body {
     padding: 8px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 801px) {
     #btn-topo {
         flex-direction: column;
     }
@@ -268,7 +268,7 @@ body {
     margin-top: 25px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 801px) {
     input[type="checkbox"] {
         display: none;
         visibility: hidden;
