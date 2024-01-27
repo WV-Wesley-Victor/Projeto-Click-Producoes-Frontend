@@ -6,100 +6,99 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Galeria</title>
-    <link rel="stylesheet" href="CSS/StyleSheet.css" />
+    <link rel="stylesheet" href="CSS/styleSheet.css" />
     <script src="JavaScript.js"></script>
     <style>
-    .button {
-       
-        display:flex;
-        justify-content:center;
-    }
+        .button {
+            display: flex;
+            justify-content: center;
+        }
 
-    .button button {
-        padding: 0;
-        border: unset;
-        border-radius: 5px;
-        color: #212121;
-        z-index: 1;
-        background: #e8e8e8;
-        position: relative;
-        font-size: 17px;
-        -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-        box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-        transition: all 250ms;
-        overflow: hidden;
-        display: block;
-        width: 150px;
-        line-height: 63.75px;
-    }
+        .button button {
+            padding: 0;
+            border: unset;
+            border-radius: 5px;
+            color: #212121;
+            z-index: 1;
+            background: #e8e8e8;
+            position: relative;
+            font-size: 17px;
+            -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+            box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+            transition: all 250ms;
+            overflow: hidden;
+            display: block;
+            width: 150px;
+            line-height: 63.75px;
+        }
 
-    .button button::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 0;
-        border-radius: 15px;
-        background-color: #212121;
-        z-index: -1;
-        -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-        box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-        transition: all 250ms
-    }
+        .button button::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 0;
+            border-radius: 15px;
+            background-color: #212121;
+            z-index: -1;
+            -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+            box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+            transition: all 250ms;
+        }
 
-    .button button:hover {
-        color: #e8e8e8;
-    }
+        .button button:hover {
+            color: #e8e8e8;
+        }
 
-    .button button:hover::before {
-        width: 100%;
-    }
+        .button button:hover::before {
+            width: 100%;
+        }
 
-    .button button a {
-        display: block;
-        text-decoration: none;
-        color: black;
-        font-size: 16px;
-    }
+        .button button a {
+            display: block;
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+        }
 
-    .button button a:hover {
-        color:white;
-    }
+        .button button a:hover {
+            color: white;
+        }
 
-    .btn-login a {
-    position: relative;
-    padding: 0.5rem;
-    border-radius: 7px;
-    border: 1px solid transparent;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 2px;
-    background: transparent;
-    overflow: hidden;
-    box-shadow: 0 0 0 0 transparent;
-    transition: all 0.2s ease-in;
-}
+        .btn-login a {
+            position: relative;
+            padding: 0.5rem;
+            border-radius: 7px;
+            border: 1px solid transparent;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 2px;
+            background: transparent;
+            overflow: hidden;
+            box-shadow: 0 0 0 0 transparent;
+            transition: all 0.2s ease-in;
+        }
 
-    .btn-login a:hover {
-        background: rgba(0, 0, 0, 0.288);
-        transition: all 0.2s ease-out;
-    }
+        .btn-login a:hover {
+            background: rgba(0, 0, 0, 0.288);
+            transition: all 0.2s ease-out;
+        }
 
-    .btn-login a::before {
-        content: "";
-        display: block;
-        width: 0px;
-        height: 86%;
-        position: absolute;
-        top: 7%;
-        left: 0%;
-        opacity: 0;
-        background: #fff;
-        box-shadow: 0 0 50px 30px #fff;
-        transform: skewX(-20deg);
-    }
+        .btn-login a::before {
+            content: "";
+            display: block;
+            width: 0px;
+            height: 86%;
+            position: absolute;
+            top: 7%;
+            left: 0%;
+            opacity: 0;
+            background: #fff;
+            box-shadow: 0 0 50px 30px #fff;
+            transform: skewX(-20deg);
+        }
     </style>
 </head>
 
@@ -108,7 +107,7 @@
         <div class="centro">
             <div class="header">
                 <div class="logo">
-                    <a href="Default.html"><img class="meio imagem-logo" src="CSS/logoNova.png" alt="Logo" /></a>
+                    <a href="Default.html"><img class="meio imagem-logo" src="img/logoNova.png" alt="Logo" /></a>
                 </div>
                 <div class="container">
                     <input type="checkbox" id="check" />
@@ -130,7 +129,9 @@
                                     <a href="https://api.whatsapp.com/message/WL5TXEEFXFA4G1?autoload=1&app_absent=0"
                                         target="_blank">Conversa</a>
                                 </li>
-                                <li class="btn-login"><a href="Login.html" id="btnLogin" onclick="btnLogin_Click(); return false;">Login</a>
+                                <li class="btn-login">
+                                    <a href="Login.html" id="btnLogin"
+                                        onclick="btnLogin_Click(); return false;">Login</a>
                                 </li>
                             </ul>
                         </nav>
@@ -140,18 +141,32 @@
             </div>
 
             <h2 class="meio titulo">Galeria</h2>
-            <h3 id="h3TituloLiteral" class="meio sub-titulo">Crie memórias para toda a vida</h3>
-            <p class='meio texto'>Desvendar uma história de amor é como bordar emoções únicas, cada ponto representa um momento precioso. Eternizar esses instantes em imagens é a magia, capturando a essência da paixão. Ter um registro tangível desses momentos? Crie seu portfolio conosco pela aba de conversa. Estamos aqui para transformar seus momentos em obras de arte, testemunhas da beleza efêmera e eterna do amor.</p>
+            <h3 id="h3TituloLiteral" class="meio sub-titulo">
+                Crie memórias para toda a vida
+            </h3>
+            <p class="meio texto">
+                Desvendar uma história de amor é como bordar emoções únicas, cada
+                ponto representa um momento precioso. Eternizar esses instantes em
+                imagens é a magia, capturando a essência da paixão. Ter um registro
+                tangível desses momentos? Crie seu portfolio conosco pela aba de
+                conversa. Estamos aqui para transformar seus momentos em obras de
+                arte, testemunhas da beleza efêmera e eterna do amor.
+            </p>
             <div>
                 <ul class="photoList">
-                    <img src="imagens/Foto-casal1.jpg" alt="Imagem">
-                        <img src="imagens/Foto-casal3.jpg" alt="Imagem">
-                        <img src="imagens/Foto-casal4.jpg" alt="Imagem">
-                        <img src="imagens/img-alianca.jpg" alt="Imagem">
-                        <img src="imagem/drone.jpg" alt="Imagem">
-                        <img src="imagem/filmagem.jpg" alt="Imagem">
+                    <img src="img/Foto-casal1.jpg" alt="Imagem" />
+                    <img src="img/Foto-casal3.jpg" alt="Imagem" />
+                    <img src="img/Foto-casal4.jpg" alt="Imagem" />
+                    <img src="img/img-alianca.jpg" alt="Imagem" />
+                    <img src="img/drone.jpg" alt="Imagem" />
+                    <img src="img/filmagem.jpg" alt="Imagem" />
                 </ul>
-            <div class='button'><button><a href='https://api.whatsapp.com/message/WL5TXEEFXFA4G1?autoload=1&app_absent=0' target='_blank'>Conversa</a></button></div>
+                <div class="button">
+                    <button>
+                        <a href="https://api.whatsapp.com/message/WL5TXEEFXFA4G1?autoload=1&app_absent=0"
+                            target="_blank">Conversa</a>
+                    </button>
+                </div>
                 <ul id="photoList" runat="server"></ul>
             </div>
         </div>
@@ -166,17 +181,17 @@
     <footer>
         <div class="footer-portfolio">
             <div class="redes-sociais">
-               <a href="https://www.instagram.com/naldo.santos_/" target="_blank"><img src="imagens/instagram.png"
+                <a href="https://www.instagram.com/naldo.santos_/" target="_blank"><img src="img/instagram.png"
                         alt="Instagram" /></a>
                 <a href="https://www.facebook.com/clickproducoesnaldosantos/" target="_blank"><img
-                        src="imagens/facebook.png" alt="Facebook" /></a>
+                        src="img/facebook.png" alt="Facebook" /></a>
                 <a href="https://api.whatsapp.com/message/WL5TXEEFXFA4G1?autoload=1&app_absent=0" target="_blank"><img
-                        src="imagens/whatsapp.png" alt="Whatsapp" /></a>
+                        src="img/whatsapp.png" alt="Whatsapp" /></a>
             </div>
             <div id="elemento-topo">
                 <nav>
                     <div id="btn-topo">
-                         <li><a href="Default.html">Home</a></li>
+                        <li><a href="Default.html">Home</a></li>
                         <li><a href="Default.html#fundo-servicos">Serviços</a></li>
                         <li><a href="Portfolio.html">Galeria</a></li>
                         <li><a href="SobreNos.html">Sobre nós</a></li>
@@ -194,39 +209,6 @@
         </div>
     </footer>
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var images = document.querySelectorAll(".gallery-image");
-            images.forEach(function (image) {
-                image.addEventListener("click", function () {
-                    exibirImagemAmpliada(image.src);
-                });
-            });
-        });
-
-        function exibirImagemAmpliada(imagemSrc) {
-            var modal = document.createElement("div");
-            modal.className = "custom-modal";
-            var imagemAmpliada = document.createElement("img");
-            imagemAmpliada.className = "modal-image";
-            imagemAmpliada.src = imagemSrc;
-
-            var closeButton = document.createElement("button");
-            closeButton.className = "close-button";
-            closeButton.innerHTML = "";
-            closeButton.addEventListener("click", function () {
-                modal.parentNode.removeChild(modal);
-            });
-
-            modal.appendChild(imagemAmpliada);
-            modal.appendChild(closeButton);
-
-            modal.addEventListener("click", function () {
-                modal.parentNode.removeChild(modal);
-            });
-
-            document.body.appendChild(modal);
-        }
-
         function voltarAoTopo() {
             window.scrollTo({
                 top: 0,

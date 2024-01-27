@@ -6,8 +6,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sobre Nós</title>
-    <link rel="stylesheet" href="CSS/StyleSheet.css" />
-    <link rel="stylesheet" type="text/css" href="StyleAbout.css" />
+    <link rel="stylesheet" href="CSS/styleSheet.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/styleAbout.css" />
 </head>
 
 <body>
@@ -15,7 +15,7 @@
         <div class="centro">
             <div class="header">
                 <div class="logo">
-                    <a href="Default.html"><img class="meio imagem-logo" src="CSS/logoNova.png" alt="Logo" /></a>
+                    <a href="Default.html"><img class="meio imagem-logo" src="img/logoNova.png" alt="Logo" /></a>
                 </div>
                 <div class="container">
                     <input type="checkbox" id="check" />
@@ -37,7 +37,9 @@
                                     <a href="https://api.whatsapp.com/message/WL5TXEEFXFA4G1?autoload=1&app_absent=0"
                                         target="_blank">Conversa</a>
                                 </li>
-                                <li class="btn-login"><a href="Login.html" id="btnLogin" onclick="btnLogin_Click(); return false;">Login</a>
+                                <li class="btn-login">
+                                    <a href="Login.html" id="btnLogin"
+                                        onclick="btnLogin_Click(); return false;">Login</a>
                                 </li>
                             </ul>
                         </nav>
@@ -48,17 +50,30 @@
         </div>
         <section class="sobre">
             <div class="titulo">
-            <h1>Sobre Nós</h1>
+                <h1>Sobre Nós</h1>
             </div>
             <div class="campoSobre">
-            <div class="textoSobre">
-            <h2>Bem vindo ao site</h2>
-            <p>Bem-vindo ao meu mundo visual! Sou [Seu Nome], um contador de histórias apaixonado que utiliza a fotografia como meio de expressão. Minha jornada me proporcionou uma visão única e sensibilidade artística para capturar momentos autênticos e emocionantes. Minha paixão vai além do simples clique; é sobre criar narrativas visuais que transcendem o tempo, explorando a beleza nos detalhes do cotidiano.
-Com abordagem criativa e olhar atento, busco ir além do óbvio, proporcionando imagens que contam histórias profundas e genuínas. Meu objetivo é imortalizar emoções e conexões, não apenas documentar. Convido você a explorar meu portfólio e permitir que eu seja o narrador visual dos momentos especiais da sua vida. Juntos, podemos transformar instantes fugazes em memórias inesquecíveis.</p>
-            </div>
-            <div class="imagem">
-            <img src="imagens/Foto-casal1.jpg" alt="fotografo">
-            </div>
+                <div class="textoSobre">
+                    <h2>Bem vindo ao site</h2>
+                    <p>
+                        Bem-vindo ao meu mundo visual! Sou Naldo, um contador de histórias
+                        apaixonado que utiliza a fotografia como meio de expressão. Minha
+                        jornada me proporcionou uma visão única e sensibilidade artística
+                        para capturar momentos autênticos e emocionantes. Minha paixão vai
+                        além do simples clique; é sobre criar narrativas visuais que
+                        transcendem o tempo, explorando a beleza nos detalhes do
+                        cotidiano. Com abordagem criativa e olhar atento, busco ir além do
+                        óbvio, proporcionando imagens que contam histórias profundas e
+                        genuínas. Meu objetivo é imortalizar emoções e conexões, não
+                        apenas documentar. Convido você a explorar meu portfólio e
+                        permitir que eu seja o narrador visual dos momentos especiais da
+                        sua vida. Juntos, podemos transformar instantes fugazes em
+                        memórias inesquecíveis.
+                    </p>
+                </div>
+                <div class="imagem">
+                    <img src="img/Foto-casal1.jpg" alt="fotografo" />
+                </div>
             </div>
         </section>
     </form>
@@ -72,17 +87,17 @@ Com abordagem criativa e olhar atento, busco ir além do óbvio, proporcionando 
     <footer>
         <div class="footer-portfolio">
             <div class="redes-sociais">
-               <a href="https://www.instagram.com/naldo.santos_/" target="_blank"><img src="imagens/instagram.png"
+                <a href="https://www.instagram.com/naldo.santos_/" target="_blank"><img src="img/instagram.png"
                         alt="Instagram" /></a>
                 <a href="https://www.facebook.com/clickproducoesnaldosantos/" target="_blank"><img
-                        src="imagens/facebook.png" alt="Facebook" /></a>
+                        src="img/facebook.png" alt="Facebook" /></a>
                 <a href="https://api.whatsapp.com/message/WL5TXEEFXFA4G1?autoload=1&app_absent=0" target="_blank"><img
-                        src="imagens/whatsapp.png" alt="Whatsapp" /></a>
+                        src="img/whatsapp.png" alt="Whatsapp" /></a>
             </div>
             <div id="elemento-topo">
                 <nav>
                     <div id="btn-topo">
-                         <li><a href="Default.html">Home</a></li>
+                        <li><a href="Default.html">Home</a></li>
                         <li><a href="Default.html#fundo-servicos">Serviços</a></li>
                         <li><a href="Portfolio.html">Galeria</a></li>
                         <li><a href="SobreNos.html">Sobre nós</a></li>
@@ -100,39 +115,6 @@ Com abordagem criativa e olhar atento, busco ir além do óbvio, proporcionando 
         </div>
     </footer>
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var images = document.querySelectorAll(".gallery-image");
-            images.forEach(function (image) {
-                image.addEventListener("click", function () {
-                    exibirImagemAmpliada(image.src);
-                });
-            });
-        });
-
-        function exibirImagemAmpliada(imagemSrc) {
-            var modal = document.createElement("div");
-            modal.className = "custom-modal";
-            var imagemAmpliada = document.createElement("img");
-            imagemAmpliada.className = "modal-image";
-            imagemAmpliada.src = imagemSrc;
-
-            var closeButton = document.createElement("button");
-            closeButton.className = "close-button";
-            closeButton.innerHTML = "";
-            closeButton.addEventListener("click", function () {
-                modal.parentNode.removeChild(modal);
-            });
-
-            modal.appendChild(imagemAmpliada);
-            modal.appendChild(closeButton);
-
-            modal.addEventListener("click", function () {
-                modal.parentNode.removeChild(modal);
-            });
-
-            document.body.appendChild(modal);
-        }
-
         function voltarAoTopo() {
             window.scrollTo({
                 top: 0,
@@ -161,3 +143,5 @@ Com abordagem criativa e olhar atento, busco ir além do óbvio, proporcionando 
         window.addEventListener("scroll", toggleButtonDisplay);
     </script>
 </body>
+
+</html>

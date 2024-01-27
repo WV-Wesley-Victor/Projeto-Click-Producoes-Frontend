@@ -17,7 +17,10 @@
 .centro {
     height: 100vh;
     display: flex;
-    background-image: linear-gradient(to bottom, rgba(41, 41, 41, 0.37), rgba(0, 0, 0, 0)), url("pexels-asad-photo-maldives-1024993.jpg");
+    background-image: linear-gradient(to bottom,
+            rgba(41, 41, 41, 0.37),
+            rgba(0, 0, 0, 0)),
+        url("../img/pexels-asad-photo-maldives-1024993.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -57,25 +60,25 @@
     border-radius: 8px;
 }
 
-    .form-inp:hover {
-        outline: 2px solid white;
-    }
+.form-inp:hover {
+    outline: 2px solid white;
+}
 
-    .form-inp:first-child {
-        margin-bottom: 15px;
-    }
+.form-inp:first-child {
+    margin-bottom: 15px;
+}
 
-    .form-inp input {
-        width: 100%;
-        background: none;
-        font-size: 16px;
-        color: white;
-        border: none;
-    }
+.form-inp input {
+    width: 100%;
+    background: none;
+    font-size: 16px;
+    color: white;
+    border: none;
+}
 
-        .form-inp input:focus {
-            outline: none;
-        }
+.form-inp input:focus {
+    outline: none;
+}
 
 .buttonLogin {
     width: 11em;
@@ -87,11 +90,11 @@
     cursor: pointer;
 }
 
-    .buttonLogin:hover {
-        background-color: transparent;
-        border: 1px solid white;
-        color: white;
-    }
+.buttonLogin:hover {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
 
 .ContentPlaceHolder1_LblResposta {
     color: white;
@@ -143,7 +146,7 @@
     width: 30px;
     height: 30px;
     background-color: transparent;
-    background-image: url(arrow.png);
+    background-image: url(../img/arrow.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -156,9 +159,9 @@
     transition: transform 0.3s ease;
 }
 
-    .btn-voltar:hover {
-        transform: scale(1.1);
-    }
+.btn-voltar:hover {
+    transform: scale(1.1);
+}
 
 #ContentPlaceHolder1_LblResposta {
     color: white;
@@ -169,6 +172,6 @@
     margin-top: 25px;
 }
 
-.LblResposta{
-    height:50px;
+.LblResposta {
+    height: 50px;
 }
