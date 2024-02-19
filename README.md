@@ -1,7 +1,7 @@
 # Projeto Click Producoes Frontend
 Bem-vindo ao repositório do Projeto Click Produções Frontend. Este projeto é dedicado ao desenvolvimento do frontend para a plataforma Click Produções, especializada na criação e gerenciamento de álbuns de fotos de casamentos. Aqui você encontrará informações sobre o desenvolvimento do frontend, funcionalidades destacadas e recursos relacionados ao universo dos casamentos.
 
-![album-casamento-importancia-fazer-ou-nao_o1fdt7ndkk77roj1ir8f2d3hnq](https://github.com/WV-Wesley-Victor/Projeto-Click-Producoes-Frontend/assets/137107062/eae2baaf-81ef-4e08-9db0-e29fbcc2423b)
+![como-fazer-album-de-fotos-profissional-panorama](https://github.com/WV-Wesley-Victor/Projeto-Click-Producoes-Frontend/assets/137107062/a23512c6-f605-4ae4-829d-7fec1494b5d6)
 <p align="center">
   <a href="https://wv-wesley-victor.github.io/Projeto-Click-Producoes-Frontend/" target="_blank">Clique aqui para visualizar o Projeto Click Produções Frontend.</a>
 </p>
